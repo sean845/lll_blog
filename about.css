@@ -172,6 +172,9 @@ body {
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
     }
+    .main-img img {
+        height: 300px;
+    }
 }
 
 .sub {
