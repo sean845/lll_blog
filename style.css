@@ -154,18 +154,21 @@ body {
 .intro-article a {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
-.intro-btn {
+.intro-btn,
+.intro-btn a {
     width: 180px;
     height: 50px;
-    background: rgb(238, 124, 48);
+    background: rgb(230, 168, 87);
+    color: white;
     margin-top: 50px;
     border-radius: 10px;
 }
-.intro-btn:hover {
-    opacity: 0.7;
+.intro-btn:hover{
+    transform: scale(1.2);
+    transition: all 0.8s;
 }
 @media (min-width:320px) and (max-width: 900px) {
     .intro {
@@ -264,6 +267,7 @@ footer {
         font-size: 12px;
     }
 }
+
 
 
 
