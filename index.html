@@ -1,269 +1,92 @@
-body {
-    margin: auto;
-    padding: auto;
-}
-
-.header-container {
-    height: 150px;
-    width: 100%;
-    background: white;
-    position: fixed;
-    z-index: 30;
-    line-height: 150px;
-}
-.header-title {
-    float: left;
-    color: rgb(238, 124, 48);
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 100px;
-    letter-spacing: 3px;
-}
-.header-menu {
-    float: right;
-    
-}
-.header-menu a {
-    text-decoration: none;
-    color: black;
-}
-.header-menu li {
-    float: left; 
-    list-style: none;
-    margin: 0 15px;
-    
-}
-.header-menu li:last-child {
-    margin-right: 100px;
-}
-.humberger-container {
-    display: none;
-}
-.container {
-    display: none;
-}
-
-@media (min-width:320px) and (max-width: 900px) {
-    .header-container {
-        height: 50px;
-        position: fixed;
-        z-index: 30;
-        line-height: 50px;
-    }
-    .header-menu {
-        display: none;
-    }
-    .header-title {
-        float: none;
-        text-align: center;
-        margin-left: 0px;
-        letter-spacing: 3px;
-        font-size: 10px;
-    }
-    .main-img {
-        width: 100%;
-    }
-    /* ハンバーガーメニュー */
-    .container {
-        width: 100%;
-        height: 0px;
-        display: flex;
-    }
-    .hamburger-menu {
-        width: 35px;
-        height: 30px;
-        position: fixed;
-        top: 10px;
-        right: 20px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    .navbar {
-        /* width: 300px; */
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        right: -500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.8s;
-    }
-    .change {
-        right: 0;
-    }
-    .line {
-        width: 100%;
-        height: 3px;
-        background-color: orange;
-        transition: all 0.8s;
-    }
-    .change .line-1 {
-        transform: rotateZ(-45deg) translate(-8px, 6px);
-    }
-    .change .line-2 {
-        opacity: 0;
-    }
-    .change .line-3 {
-        transform: rotateZ(45deg) translate(-8px, -6px);
-    }
-    
-    .nav-list {
-        text-align: center;
-        margin-left: -40px;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Like a Local</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3c665e1f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container" id="header-container">
+            <div class="header-title" id="header-title">
+                <h1>Live Like a Local</h1>
+            </div>
+            <div class="header-menu" id="header-menu">
+                <ul>
+                    <li><a href="https://sean845.github.io/lll_blog/index.html" id="home">Home</a></li>
+                    <li><a href="https://sean845.github.io/lll_blog/about.html" id="about">About</a></li>
+                    <li><a href="https://sean845.github.io/lll_blog/travel.html" id="travel">Travel blog</a></li>
+                    <li><a href="" id="living">Living abroad</a></li>
+                    <li><a href="" id="contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- ハンバーガーメニュー -->
+            <div class="container">
+                <nav class="navbar" id="navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
         
-    }
-    .nav-item {
-        list-style: none;
-        margin:25px;
-    }
-    .nav-link {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-        font-weight: 300px;
-        letter-spacing: 1px;
-    }
-    /* ハンバーガーメニュー */
-}
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="https://sean845.github.io/lll_blog/index.html" class="nav-link">Home</a></li> 
+                        <li class="nav-item"><a href="https://sean845.github.io/lll_blog/about.html" class="nav-link">About</a></li> 
+                        <li class="nav-item"><a href="https://sean845.github.io/lll_blog/travel.html" class="nav-link">Travel blog</a></li> 
+                        <li class="nav-item"><a href="" class="nav-link">Living abroad</a></li> 
+                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li> 
+                    </ul>
+                </nav>
+            </div>
+            <!-- ハンバーガーメニュー -->
+        </div>
+            <div class="main-img">
+                <img src="img/Spain/BCN/IMG_6218.JPG" alt="" width="100%">
+            </div>
+        </div>
 
-.intro {
-    height: 500px;
-    margin: 100px 0 300px 0;
-    vertical-align: baseline;
-}
-.intro-img {
-    float: left;
-    margin: 0 80px;
-}
+    </header>
+    <main>
+        <div class="intro">
+            <div class="intro-img">
+                <img src="img/Iceland/IMG_7994.JPG" alt="" width="50%" height="550px">
+                <div class="intro-article">
+                    <h1>Welcome to <br>Live Like a Local!</h1>
+                    <article>My name is Shion, 23 years old Japanese.<br>I've lived in Spain and the U.S.A. as an exchange student.
+                    <br>I have been to 13 countries and over 30 cities.<br>Nice to meet you all!!<br>I hope this blog help you to explore the world.</article>
+                    <button class="intro-btn" id="intro-btn"><a href="https://sean845.github.io/lll_blog/travel.html">Explore and Find</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel-contents">
+                <div class="content nature">
+                    <img class="nature-img" src="img/Iceland/IMG_7871.JPG" alt=""  width="80%">
+                    <p>NATURE</p>
+                </div>
+                <div class="content london">
+                    <img class="london-img" src="img/Italy/Roma/IMG_5571.JPG" alt=""  width="80%">
+                    <p>NEIGHBOOR</p>
+                </div>
+                <div class="content art">
+                    <img class="art-img" src="img/France/IMG_5770.JPG" alt=""  width="80%">
+                    <p>ARTS</p>
+                </div>
+            </div>
+        </div>
+        <div class="messages">
+            <div class="message">
+                <h2>Strat you own journey <br> and <br> Live Like a Local</h2>
+            </div>
+        </div>
+        <footer>
+            <p>created by seank, @2020-2021 all rights reserved</p>
+        </footer>
 
-.intro-article {
-    float: right;
-    margin: 50px 100px 50px 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-.intro-article article {
-    line-height: 40px;
-}
-
-.intro-article a {
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    /* color: white; */
-    text-decoration: none;
-}
-.intro-btn,
-.intro-btn a {
-    width: 180px;
-    height: 50px;
-    background: rgb(230, 168, 87);
-    color: white;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-.intro-btn:hover{
-    transform: scale(1.2);
-    transition: all 0.8s;
-}
-@media (min-width:320px) and (max-width: 900px) {
-    .intro {
-        height: 300px;
-        margin: 100px 0 300px 0;
-        vertical-align: baseline;
-    }
-    .intro-img {
-        float: none;
-        width: 80%;
-        margin: 0 40px;
-    }
-    .intro-img img {
-        text-align: center;
-        width: 100%;
-        height: 200px;
-    }
-    .intro-article {
-        text-align: center;
-        font-size: 20px;
-        margin: 10px;
-    }
-    .intro-article h1 {
-        font-size: 20px;
-        letter-spacing: 2px;
-        margin-bottom: 30px;
-    }
-    .intro-article article {
-        line-height: 30px;
-        font-size: 20px;
-    }
-    .intro-article a {
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-        color: white;
-        text-decoration: none;
-    }
-    .intro-btn {
-        width: 150px;
-        height: 50px;
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-    .intro-btn a {
-        font-size: 15px;
-    }
-}
-.travel-contents {
-    display: flex;
-    text-align: center;
-}
-
-@media (min-width:320px) and (max-width: 900px) {
-    .travel-contents {
-        display: inline;
-        text-align: center;
-    }
-    .content {
-        margin-top: 30px;
-        justify-content: center;
-    }
-}
-.messages {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 250px;
-    letter-spacing: 7px;
-    line-height: 100px;
-    font-family: 'Times New Roman', Times, serif;
-}
-@media (min-width:320px) and (max-width: 900px) {
-    .messages {
-        font-size: 10px;
-        margin-top: 120px;
-        letter-spacing: 5px;
-        line-height: 50px;
-    }
-}
-
-footer {
-    height: 150px;
-    background: black;
-    color: white;
-    text-align: center;
-    line-height: 150px;
-    margin-top: 200px;
-}
-@media (min-width:320px) and (max-width: 900px) {
-    footer {
-        height: 100px;
-        background: black;
-        color: white;
-        text-align: center;
-        line-height: 100px;
-        margin-top: 100px;
-        font-size: 12px;
-    }
-}
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
