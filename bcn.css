@@ -40,6 +40,7 @@ body {
     display: none;
 }
 
+
 @media (min-width:320px) and (max-width: 900px) { 
     .header-container {
         height: 50px;
@@ -371,6 +372,7 @@ body {
 .uni-detail nav {
     display: none;
 }
+
 @media (min-width:320px) and (max-width: 900px) {
     .uni-detail article {
         display: none;
@@ -484,6 +486,12 @@ body {
 .house-detail nav {
     display: none;
 }
+.house-detail img {
+    margin-bottom: 50px;
+}
+.house a {
+    font-size: 20px;
+}
 @media (min-width:320px) and (max-width: 900px) {
     .house-detail h1 {
         font-size: 25px;
@@ -506,6 +514,10 @@ body {
         width: 100%;
         height: 200px;
         margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .house a {
+        font-size: 15px;
     }
 }
 .play {
@@ -531,6 +543,12 @@ body {
 }
 .play-title nav {
     display: none;
+}
+.play-title img {
+    margin-bottom: 50px;
+}
+.play a {
+    font-size: 20px;
 }
 @media (min-width:320px) and (max-width: 900px) {
     .play {
@@ -561,6 +579,10 @@ body {
         width: 100%;
         height: 200px;
         margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .play a {
+        font-size: 13px;
     }
 }
 .summary-title {
