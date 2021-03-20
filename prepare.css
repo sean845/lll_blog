@@ -1,4 +1,4 @@
-body {
+ody {
     margin: auto;
     padding: auto;
 }
@@ -38,6 +38,45 @@ body {
 }
 .container {
     display: none;
+}
+/* snsメニュー */
+.sns {
+    display: flex;
+    background-color: white; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    right: -100px;
+    width: 100px;
+    height: 100%; 
+    transition: all 0.7s;
+    cursor: pointer;
+} 
+
+.fa {
+    margin-top: 100px;
+    margin-left: 30px;
+    color: black;
+    font-size: 40px;
+    width: 100%;
+    justify-content: center;
+}
+.menu-bar {
+    right: 0;
+}
+.fa-instagram:hover {
+    color: purple;
+}
+.fa-facebook:hover {
+    color:blue;
+}
+.fa-twitter:hover {
+    color: skyblue;
+}
+.fa-instagram:hover {
+    color: purple;
 }
 
 
