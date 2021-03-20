@@ -171,6 +171,9 @@ body {
         letter-spacing: 1px;
     }
     /* ハンバーガーメニュー */
+    #contact {
+        display: none;
+    }
 }
 
 .img-title {
