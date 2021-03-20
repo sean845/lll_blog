@@ -1,4 +1,4 @@
-ody {
+body {
     margin: auto;
     padding: auto;
 }
@@ -56,7 +56,7 @@ ody {
 } 
 
 .fa {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 30px;
     color: black;
     font-size: 40px;
@@ -65,6 +65,9 @@ ody {
 }
 .menu-bar {
     right: 0;
+}
+.fa-instagram {
+    margin-top: 150px;
 }
 .fa-instagram:hover {
     color: purple;
