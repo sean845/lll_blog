@@ -172,6 +172,9 @@ body {
         letter-spacing: 1px;
     }
     /* ハンバーガーメニュー */
+    #contact {
+        display: none;
+    }
 }
 .main-title {
     text-align: center;
