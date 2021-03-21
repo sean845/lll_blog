@@ -79,6 +79,34 @@ body {
 .fa-instagram:hover {
     color: purple;
 }
+/* ページ */
+.page {
+    position: fixed;
+    top: 550px;
+    right: 0;
+    margin-right: 50px;
+}
+.page button {
+    width: 50px;
+    height: 60px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .page {
+        position: fixed;
+        top: 680px;
+        right: 10px;
+        margin-right: 10px;
+    }
+    .page button {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+}
 
 @media (min-width:320px) and (max-width: 900px) {
     .header-container {
