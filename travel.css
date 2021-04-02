@@ -78,6 +78,9 @@ body {
 .fa-instagram:hover {
     color: purple;
 }
+.fa-youtube:hover {
+    color: red;
+}
 /* ページ */
 .page {
     position: fixed;
