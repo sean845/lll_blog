@@ -45,7 +45,7 @@ body {
 /* snsメニュー */
 .sns {
     display: flex;
-    background-color: white; 
+/*     background-color: white;  */
     /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
