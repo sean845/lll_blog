@@ -30,11 +30,15 @@ body {
 .header-menu li {
     float: left; 
     list-style: none;
-    margin: 0 15px;
+    margin: 0 20px;
     
 }
 .header-menu li:last-child {
     margin-right: 100px;
+}
+.header-menu li:hover {
+    transform: scale(1.2);
+    transition: all 0.7s;
 }
 .container {
     display: none;
@@ -42,8 +46,7 @@ body {
 /* snsメニュー */
 .sns {
     display: flex;
-    background-color: white; 
-    align-items: center;
+    /* background-color: white;  */
     justify-content: center;
     flex-wrap: wrap;
     position: fixed;
@@ -56,7 +59,7 @@ body {
 } 
 
 .fa {
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 30px;
     color: black;
     font-size: 40px;
@@ -65,6 +68,9 @@ body {
 }
 .menu-bar {
     right: 0;
+}
+.fa-instagram {
+    margin-top: 130px;
 }
 .fa-instagram:hover {
     color: purple;
@@ -85,7 +91,7 @@ body {
 .page {
     position: fixed;
     top: 550px;
-    right: 0;
+    right: 60px;
     margin-right: 50px;
 }
 .page button {
@@ -99,7 +105,7 @@ body {
 @media (min-width:320px) and (max-width: 900px) {
     .page {
         position: fixed;
-        top: 650px;
+        top: 680px;
         right: 10px;
         margin-right: 10px;
     }
