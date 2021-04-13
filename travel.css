@@ -263,6 +263,9 @@ body {
     line-height: 50px;
     font-size: 20px;
 }
+.travel-tip nav {
+    display: none;
+}
 .plane {
     margin: 0 200px;
 }
@@ -274,6 +277,9 @@ body {
 }
 .plane article {
     line-height: 50px;
+}
+.plane nav {
+    display: none;
 }
 .plane a {
     text-decoration: none;
