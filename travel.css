@@ -295,13 +295,15 @@ body {
     padding: 20px;
     border: 1px solid black;
 }
-
-
-
 .blog {
     display: flex;
     justify-content: center;
     margin-top: 80px;
+}
+.blog-title {
+    margin: 0 200px;
+    margin-top: 130px;
+    border-top: 1px solid black;
 }
 .blog-link {
     font-size: 12px;
@@ -327,7 +329,11 @@ body {
         display: inline-block;
         margin-top: 40px;
     }
-
+    .blog-title {
+        margin: 0 10px;
+        margin-top: 100px;
+        border-top: 1px solid black;
+    }
     .travel-tip {
         font-family: 'Times New Roman', Times, serif;
     }
@@ -376,9 +382,6 @@ body {
         padding: 20px;
         border: 1px solid black;
     }
-
-
-
     .blog img {
         height: 230px;
         width: 85%;
@@ -398,6 +401,117 @@ body {
     .blog-detail article {
         margin-top: 10px;
         font-size: 15px;
+    }
+}
+
+.hotel {
+    margin: 0 200px;
+}
+.hotel h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.hotel h1 {
+    font-size: 35px;
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid black;
+}
+.hotel article {
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+.hotel nav {
+    display: none;
+}
+.hotel a {
+    text-decoration: none;
+}
+
+.hotel-reserve {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .hotel {
+        margin: 0 10px;
+    }
+    .hotel h1 {
+        font-size: 25px;
+        margin-top: 100px;
+        padding-top: 50px;
+        border-top: 1px solid black;
+    }
+    .hotel h2 {
+        border-top: none;
+        font-size: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .hotel article {
+        display: none;
+    }
+    .hotel nav {
+        display: block;
+        line-height: 40px;
+    }
+    .hotel a {
+        text-decoration: none;
+    }
+    
+    .hotel-reserve {
+        width: 80%;
+        height: 250px;
+        margin: 0px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+}
+.summary {
+    margin: 0 200px;
+}
+.summary h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.summary h1 {
+    font-size: 35px;
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid black;
+}
+.summary article {
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+.summary nav {
+    display: none;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .summary {
+        margin: 0 10px;
+    }
+    .summary h1 {
+        font-size: 25px;
+        margin-top: 100px;
+        padding-top: 50px;
+        border-top: 1px solid black;
+    }
+    .summary h2 {
+        border-top: none;
+        font-size: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .hotel article {
+        display: none;
+    }
+    .summary nav {
+        display: block;
+        line-height: 40px;
     }
 }
 
