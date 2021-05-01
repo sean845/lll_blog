@@ -29,11 +29,15 @@ body {
 .header-menu li {
     float: left; 
     list-style: none;
-    margin: 0 15px;
+    margin: 0 20px;
     
 }
 .header-menu li:last-child {
     margin-right: 100px;
+}
+.header-menu li:hover {
+    transform: scale(1.2);
+    transition: all 0.7s;
 }
 .container {
     display: none;
@@ -43,7 +47,7 @@ body {
 .sns {
     display: flex;
     background-color: white; 
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
     position: fixed;
@@ -56,7 +60,7 @@ body {
 } 
 
 .fa {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 30px;
     color: black;
     font-size: 40px;
@@ -88,7 +92,7 @@ body {
 .page {
     position: fixed;
     top: 550px;
-    right: 0;
+    right: 60px;
     margin-right: 50px;
 }
 .page button {
@@ -99,19 +103,7 @@ body {
     background-color: white;
     border-radius: 50%;
 }
-@media (min-width:320px) and (max-width: 900px) {
-    .page {
-        position: fixed;
-        top: 650px;
-        right: 10px;
-        margin-right: 10px;
-    }
-    .page button {
-        width: 40px;
-        height: 40px;
-        font-size: 25px;
-    }
-}
+
 @media (min-width:320px) and (max-width: 900px) { 
     .header-container {
         height: 50px;
@@ -205,6 +197,19 @@ body {
         display: none;
     }
 }
+@media (min-width:320px) and (max-width: 900px) {
+    .page {
+        position: fixed;
+        top: 680px;
+        right: 10px;
+        margin-right: 10px;
+    }
+    .page button {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+}
 
 .img-title {
     position: relative;
@@ -253,9 +258,125 @@ body {
     }
 }
 
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 200px;
+    height: 600px;
+}
+.intro-title {
+    text-align: center;
+    font-size: 25px;
+}
+.intro-title img {
+    opacity: 0.4;
+}
+.intro-detail {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -500px;
+}
+.intro-detail article {
+    width: 50%;
+    margin: 100px;
+}
+.en {
+    line-height: 40px;
+    font-size: 20px;
+}
+.ja {
+    line-height: 45px;
+    font-size: 15px;
+}
+.intro-detail nav {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .intro {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 80px;
+    }
+    .intro-title {
+        text-align: center;
+        font-size: 15px;
+    }
+    .intro-title img {
+        opacity: 0.4;
+        width: 80%;
+        margin-top: 300px;
+    }
+    .intro-detail {
+        display: block;
+        justify-content: center;
+        position: relative;
+        top: -650px;
+    }
+    .intro-detail article {
+        width: 80%;
+        margin: 50px;
+    }
+    .en {
+        line-height: 25px;
+        font-size: 20px;
+    }
+    .ja {
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .intro-detail nav {
+        display: none;
+    }
+}
+
+.total {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.total-title {
+    font-size: 30px;
+}
+.total-detail {
+    display: flex;
+    justify-content: center;
+}
+.summary {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 30%;
+    margin: 20px;
+    padding: 0px 40px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .total {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-top: 300px;
+    }
+    .total-title {
+        font-size: 20px;
+    }
+    .total-detail {
+        display: block;
+        /* width: 100%; */
+        text-align: center;
+    }
+    .summary {
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 90%;
+        padding: 0px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+}
+
 .sub {
     text-align: center;
-    margin-top: 300px;
+    margin-top: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
 .sub-title {
@@ -299,7 +420,7 @@ body {
 @media (min-width:320px) and (max-width: 900px) {
     .sub {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 0px;
         font-family: 'Times New Roman', Times, serif;
     }
     .sub-title {
