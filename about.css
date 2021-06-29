@@ -1,22 +1,23 @@
 body {
     margin: auto;
     padding: auto;
+    background-color: rgb(213, 226, 213);
 }
-
 .header-container {
-    height: 150px;
+    height: 120px;
     width: 100%;
     background: white;
     position: fixed;
     z-index: 30;
-    line-height: 150px;
+    line-height: 110px;
+    border-bottom: 2px solid rgb(148, 148, 148);
+    box-shadow: black;
 }
 .header-title {
     float: left;
-    color: rgb(238, 124, 48);
-    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    font-family: fantasy;
     margin-left: 100px;
-    letter-spacing: 3px;
 }
 .header-menu {
     float: right;
@@ -24,20 +25,30 @@ body {
 }
 .header-menu a {
     text-decoration: none;
-    color: black;
+    color: rgb(182, 182, 182);
+    font-family: serif;
 }
 .header-menu li {
     float: left; 
     list-style: none;
-    margin: 0 20px;
-    
+    margin: 0 40px;
+    cursor: pointer;
+    color: rgb(182, 182, 182);
 }
 .header-menu li:last-child {
-    margin-right: 100px;
+    margin-right: 200px;
 }
 .header-menu li:hover {
     transform: scale(1.2);
     transition: all 0.7s;
+    color: black;
+    transition: all 0.5s;
+    text-decoration: underline black;
+}
+.header-menu a:hover {
+    color: black;
+    transition: all 0.5s;
+    text-decoration: underline black;
 }
 .container {
     display: none;
@@ -46,7 +57,7 @@ body {
 /* snsメニュー */
 .sns {
     display: flex;
-    background-color: white; 
+    background-color: rgb(139, 139, 139); 
     /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
@@ -57,13 +68,14 @@ body {
     height: 100%; 
     transition: all 0.7s;
     cursor: pointer;
-} 
-
+    opacity: 0.6;
+    z-index: 30;
+}
 .fa {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: 30px;
-    color: black;
-    font-size: 40px;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
     width: 100%;
     justify-content: center;
 }
@@ -116,7 +128,7 @@ body {
     .header-title {
         float: none;
         text-align: center;
-        color: rgb(238, 124, 48);
+        color: gray;
         font-family: 'Times New Roman', Times, serif;
         font-size: 10px;
         margin-left: 0;
@@ -163,7 +175,7 @@ body {
     .line {
         width: 100%;
         height: 3px;
-        background-color: orange;
+        background-color: rgb(189, 189, 189);
         transition: all 0.8s;
     }
     .change .line-1 {
@@ -179,11 +191,13 @@ body {
     .nav-list {
         text-align: center;
         margin-left: -40px;
-        
     }
     .nav-item {
         list-style: none;
         margin:25px;
+    }
+    .nav-item a {
+        color: gray;
     }
     .nav-link {
         text-decoration: none;
@@ -220,26 +234,28 @@ body {
     align-items: center;
     color: white;
 }
+.main-img img {
+    opacity: 0.7;
+}
+.main-img img:hover {
+    opacity: 0.9;
+    transition: 0.7s;
+}
 .explanation {
     text-align: center;
     line-height: 80px;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
-.main-img {
-    margin: 0 100px;
-}
-.main-img img {
-    height: 600px;
-}
+
 
 @media (min-width:320px) and (max-width: 900px) {
     .img-title {
         position: relative;
         top: -170px;
-        font-size: 20px;;
+        font-size: 25px;;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: fantasy;
         align-items: center;
         color: white;
     }
@@ -249,9 +265,9 @@ body {
     .explanation {
         margin: 30px;
         text-align: center;
-        line-height: 50px;
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
+        line-height: 40px;
+        font-size: 17px;
+        font-family: fantasy;
     }
     .main-img img {
         height: 300px;
@@ -279,6 +295,7 @@ body {
 .intro-detail article {
     width: 50%;
     margin: 100px;
+    font-family: fantasy;
 }
 .en {
     line-height: 40px;
@@ -294,7 +311,7 @@ body {
 
 @media (min-width:320px) and (max-width: 900px) {
     .intro {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: fantasy;
         margin-top: 80px;
     }
     .intro-title {
@@ -317,11 +334,11 @@ body {
         margin: 50px;
     }
     .en {
-        line-height: 25px;
+        line-height: 30px;
         font-size: 20px;
     }
     .ja {
-        line-height: 25px;
+        line-height: 30px;
         font-size: 15px;
     }
     .intro-detail nav {
@@ -333,13 +350,16 @@ body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-bottom: 200px;
+    margin-top: 150px;
 }
 .total-title {
     font-size: 30px;
+    font-family: fantasy;
 }
 .total-detail {
     display: flex;
     justify-content: center;
+    font-family: fantasy;
 }
 .summary {
     border: 1px solid black;
@@ -347,14 +367,26 @@ body {
     width: 30%;
     margin: 20px;
     padding: 0px 40px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 3px;
+}
+.total-recommend {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.total-recommend iframe {
+    opacity: 0.5;
+}
+.total-recommend iframe:hover {
+    opacity: 1;
+    transition: 0.8s;
 }
 @media (min-width:320px) and (max-width: 900px) {
     .total {
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
-        margin-top: 300px;
+        margin-top: 550px;
     }
     .total-title {
         font-size: 20px;
@@ -372,12 +404,22 @@ body {
         font-size: 20px;
         letter-spacing: 3px;
     }
+    .total-recommend {
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+    }
+    .total-recommend iframe {
+        width: 90%;
+        height: 160px;
+        margin-top: 30px;
+    }
 }
 
 .sub {
     text-align: center;
     margin-top: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
 .sub-title {
     letter-spacing: 3px;
@@ -386,42 +428,48 @@ body {
     width: 30%;
     height: 50px;
     margin-top: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 25px;
+    border-radius: 10px;
 }
 .mail {
     width: 30%;
     height: 50px;
     margin: 50px 0 20px 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 25px;
+    border-radius: 10px;
 }
 .message {
     width: 60%;
     height: 100px;
     margin: 50px 10px 20px 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 25px;
+    border-radius: 10px;
 }
 .btn {
     color: white;
-    background: black;
+    background: rgb(224, 224, 224);
     width: 65%;
     height: 50px;
     margin-top: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 25px;
+    box-shadow: rgb(134, 134, 134) 4px 4px;
 }
 .btn:hover {
-    opacity: 0.7;
+    background-color: rgb(172, 172, 172);
+    transition: all 0.9s;
     cursor: pointer;
+    box-shadow: none;
 }
 
 @media (min-width:320px) and (max-width: 900px) {
     .sub {
         text-align: center;
         margin-top: 0px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: fantasy;
     }
     .sub-title {
         letter-spacing: 1px;
@@ -453,11 +501,12 @@ body {
     }
     .btn {
         color: white;
-        background: black;
+        background-color: rgb(172, 172, 172);
         width: 80%;
         height: 30;
         margin-top: 0;
         font-size: 15px;
+        box-shadow: rgb(134, 134, 134) 4px 4px;
     }
     .btn:hover {
         opacity: 0.7;
@@ -467,7 +516,7 @@ body {
 
 footer {
     height: 150px;
-    background: black;
+    background: rgb(180, 180, 180);
     color: white;
     text-align: center;
     line-height: 150px;
@@ -476,7 +525,7 @@ footer {
 @media (min-width:320px) and (max-width: 900px) {
     footer {
         height: 100px;
-        background: black;
+        background: rgb(180, 180, 180);
         color: white;
         text-align: center;
         line-height: 100px;
@@ -484,3 +533,4 @@ footer {
         font-size: 12px;
     }
 }
+
