@@ -1,118 +1,4 @@
-body {
-    margin: auto;
-    padding: auto;
-    background-color: rgb(213, 226, 213);
-    font-family: fantasy;
-}
-.header-container {
-    height: 120px;
-    width: 100%;
-    background: white;
-    position: fixed;
-    z-index: 30;
-    line-height: 110px;
-    border-bottom: 2px solid rgb(148, 148, 148);
-    box-shadow: black;
-}
-.header-title {
-    float: left;
-    color: gray;
-    font-family: fantasy;
-    margin-left: 100px;
-    letter-spacing: 3px;
-}
-.header-menu {
-    float: right;
-    color: gray;
-    font-family: fantasy;
-}
-.header-menu a {
-    text-decoration: none;
-    color: gray;
-}
-.header-menu li {
-    float: left; 
-    list-style: none;
-    margin: 0 40px;
-}
-.header-menu li:last-child {
-    margin-right: 100px;
-}
-.header-menu li:hover {
-    transform: scale(1.2);
-    transition: all 0.7s;
-}
-.humberger-container {
-    display: none;
-}
-.container {
-    display: none;
-}
-
-/* snsメニュー */
-.sns {
-    display: flex;
-    background-color: rgb(202, 219, 202); 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    right: -100px;
-    width: 100px;
-    height: 100%; 
-    transition: all 0.7s;
-    cursor: pointer;
-    opacity: 0.7;
-} 
-.fa {
-    margin-top: 50px;
-    margin-left: 30px;
-    color: gray;
-    font-size: 20px;
-    width: 100%;
-    justify-content: center;
-}
-.fa-instagram {
-    margin-top: 150px;
-}
-.menu-bar {
-    right: 0;
-}
-.fa-instagram:hover {
-    color: purple;
-}
-.fa-facebook:hover {
-    color:blue;
-}
-.fa-twitter:hover {
-    color: skyblue;
-}
-.fa-instagram:hover {
-    color: purple;
-}
-.fa-youtube:hover {
-    color: red;
-}
-/* ページ */
-.page {
-    position: fixed;
-    top: 550px;
-    right: 60px;
-    margin-right: 50px;
-}
-.page button {
-    width: 50px;
-    height: 60px;
-    font-size: 25px;
-    color: black;
-    background-color: white;
-    border-radius: 50%;
-}
-@media (min-width:320px) and (max-width: 900px) {
-    .page {
-        position: fixed;
-        top: 680px;
+0px;
         right: 10px;
         margin-right: 10px;
     }
@@ -138,9 +24,13 @@ body {
         margin-left: 0px;
         letter-spacing: 3px;
         font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
     }
     .main-img {
         width: 100%;
+    }
+    .img-title {
+        font-family: fantasy;
     }
     .main-img img {
         height: 100%;
@@ -365,6 +255,9 @@ body {
         margin-top: 20px;
         padding-top: 20px;
         font-size: 12px;
+    }
+    .living h1 {
+        font-size: 15px;
     }
     .destinations {
         display: flex;
